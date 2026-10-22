@@ -6,7 +6,7 @@
 ## X-ModUs-UID: 22
 ## X-Curse-Project-ID: 299776
 ## SavedVariables: AddUIDB
-## Version: 20261015
+## Version: 20261021
 
 AddUI-API.lua
 AddUIDB.lua
@@ -59,6 +59,7 @@ UI\CooldownCopy.lua
 UI\Damage.lua
 UI\DamageSnap.lua
 UI\DamageValue.lua
+UI\DeathRecapAlert.lua
 UI\InfoBar.lua
 UI\InspectLevel.lua
 UI\InterruptAlert.lua

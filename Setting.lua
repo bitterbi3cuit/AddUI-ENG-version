@@ -50,7 +50,9 @@ end)
 ns.AddTab("Combat", function()
 	ns.AddSection("Combat Modules")
 	ns.AddCheck("Entering Combat Alert", "Shows an entering/leaving combat alert in the middle of the screen", "comb")
-	
+	ns.AddCheck("Death damage alert", "Display damage and health information of the fatal event upon death", "deathRecapAlert", function(enabled)
+	if not enabled and ns.HideDeathRecapAlert then ns.HideDeathRecapAlert() end
+	end)
 	ns.AddCheck("LFG Enhancements", "Double-click to apply to premade groups, auto-invite, auto-join group. If you use Premade Group Finder, this option is automatically disabled", "lfgkg")
 	
 	ns.AddCheck("Cooldown Manager Skinning", "Cooldown manager skinning", "cdset")
