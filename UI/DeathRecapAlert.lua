@@ -76,11 +76,11 @@ local function ShowDeathRecap()
 		PushPart(eventText)
 	end
 
-	PushPart(FormatOptional("总伤", event.amount, "|cffffff00"))
-	PushPart(FormatOptional("生命值", event.currentHP, "|cff00ff00"))
-	PushPart(FormatOptional("过量", event.overkill, "|cffff0000"))
+	PushPart(FormatOptional("Total damage", event.amount, "|cffffff00"))
+	PushPart(FormatOptional("Health", event.currentHP, "|cff00ff00"))
+	PushPart(FormatOptional("Overkill", event.overkill, "|cffff0000"))
 	if event.avoidable ~= nil and not ns.MM(event.avoidable) and event.avoidable then
-		PushPart("|cffffffff可规避|r")
+		PushPart("|cffffffffAvoidable|r")
 	end
 
 	if #parts == 0 then return end
