@@ -143,7 +143,7 @@ ns.event("MERCHANT_SHOW", function()
 
 	local searchBox = CreateFrame("EditBox", "MerchantSearchBox", MerchantFrame, "SearchBoxTemplate")
 	searchBox:SetSize(110, 22)
-	searchBox:SetPoint("TOPLEFT", MerchantFrame, "TOPLEFT", 60, -30)
+	searchBox:SetPoint("TOPLEFT", MerchantFrame, "TOPLEFT", 60, 20)
 	searchBox:SetAutoFocus(false)
 	SearchBoxTemplate_OnLoad(searchBox)
 
